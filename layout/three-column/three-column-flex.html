@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>三栏布局-flex</title>
+ <style>
+  .box{
+   display: flex;
+   height: 500px;
+  }
+  .left{
+   width:200px;
+   background-color: tomato;
+  }
+  .middle{
+   flex: 1;
+   background-color: yellowgreen;
+  }
+  .right{
+   width:200px;
+   background-color: turquoise;
+  }
+ </style>
+</head>
+<br>
+ <br/>
+ <header>三栏布局，使用flex，中间自适应，两边固定</header>
+ <br/>
+ <section class="box">
+  <div class="left"></div>
+  <div class="middle"></div>
+  <div class="right"></div>
+ </section>
+</body>
+</html>

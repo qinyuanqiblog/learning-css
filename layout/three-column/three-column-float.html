@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>三栏布局-float</title>
+ <style>
+  .box::after{
+    display: block;
+    clear: both;
+  }
+  .left{
+   float: left;
+   width:200px;
+     height: 500px;
+   background-color: tomato;
+  }
+  .middle{
+   height: 500px;
+   background-color: yellowgreen;
+  }
+  .right{
+   float:right;
+   width:200px;
+   height: 500px;
+   background-color: turquoise;
+  }
+ </style>
+</head>
+<br>
+ <br/>
+ <header>三栏布局，使用float </header>
+ <br/>
+ <section class="box">
+  <div class="left"></div>
+  <div class="right"></div>
+  <div class="middle"></div>
+ </section>
+</body>
+</html>
