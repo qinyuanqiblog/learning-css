@@ -6,12 +6,19 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>三栏布局-flex</title>
  <style>
+  header{
+   background-color: burlywood;
+  }
+  footer{
+   background-color:cyan;
+  }
   .box{
    display: flex;
    height: 500px;
   }
   .left{
    width:200px;
+   order: -1;
    background-color: tomato;
   }
   .middle{
@@ -26,12 +33,14 @@
 </head>
 <br>
  <br/>
- <header>三栏布局，使用flex，中间自适应，两边固定</header>
+ <header>三栏布局，使用flex，中间自适应，两边固定,不考虑低版本，推荐这个</header>
  <br/>
+ <header>头部</header>
  <section class="box">
-  <div class="left"></div>
-  <div class="middle"></div>
-  <div class="right"></div>
+  <div class="left">阿左</div>
+  <div class="middle">阿中</div>
+  <div class="right">阿右</div>
  </section>
+ <footer>尾巴</footer>
 </body>
 </html>

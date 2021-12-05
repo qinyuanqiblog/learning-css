@@ -6,6 +6,12 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>三栏布局-float</title>
  <style>
+   header{
+     background-color: darkkhaki;
+   }
+   footer{
+     background-color: darkslateblue;
+   }
   .box::after{
     display: block;
     clear: both;
@@ -32,10 +38,12 @@
  <br/>
  <header>三栏布局，使用float </header>
  <br/>
+ <header>头部</header>
  <section class="box">
-  <div class="left"></div>
-  <div class="right"></div>
-  <div class="middle"></div>
+  <div class="left">阿左</div>
+  <div class="right">阿右</div>
+  <div class="middle">阿中</div>
  </section>
+ <footer>尾巴</footer>
 </body>
 </html>

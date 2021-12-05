@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>flex 上中下 常规布局<</title>
+ <style>
+  *{
+   margin: 0;
+   padding: 0;
+  }
+  .Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
+}
+header{
+ background-color: hotpink;
+}
+footer{
+ background-color: forestgreen;
+}
+
+.Site-content {
+ background-color: goldenrod;
+  flex: 1;
+}
+ </style>
+</head>
+
+ <body class="Site">
+  
+  <br />
+  <div>flex 上中下 常规布局</div>
+  <br />
+  <br />
+
+  <header>头部</header>
+  <main class="Site-content">中间</main>
+  <footer>底部</footer>
+</body>
+ 
+</html>

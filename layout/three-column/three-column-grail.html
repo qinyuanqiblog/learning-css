@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>三栏布局-flex</title>
+ <style>
+  header{
+   background-color: deepskyblue;
+  }
+  footer{
+   background-color: forestgreen;
+   background-color: forestgreen;
+  }
+  .box{
+   padding:0 100px;
+   height: 500px;
+   color:#000;
+  }
+  .box:after{
+   content:'';
+   display: block;
+   clear: both;
+  }
+  .left{
+  float:left;
+  width: 100px;
+  height: 100%;
+  margin-left: -100%;
+  background-color: tomato;
+  position: relative;
+  left: -100px; 
+  }
+  .middle{
+   width:100%;
+   height: 100%;
+   float:left;
+   background-color: yellowgreen;
+  }
+  .right{
+   float:left;
+   width: 100px;
+   height: 100%;
+   margin-left: -100px;
+   background-color: turquoise;
+   position: relative;
+   left: 100px; 
+  }
+ </style>
+</head>
+<br>
+ <br/>
+ <header>圣杯布局，使用mergin  - 100%，考虑兼容性，推荐使用这个</header>
+ <br/>
+ <header>头部</header>
+ <section class="box">
+  <div class="middle">阿中</div>
+  <div class="left">阿左</div>
+  <div class="right">阿右</div>
+ </section>
+ <footer>尾巴</footer>
+</body>
+</html>
